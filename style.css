@@ -16,7 +16,7 @@ h1,h2{
     font-family: "Playfair Display", serif;
 }
 h3,h4{
-     font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 
 }
 ul{
@@ -60,7 +60,7 @@ h2 span{
 .navbar ul li a:hover{
     color: #c96770;
 }
- .btn{
+.btn{
     margin-right: 20px;
     background-color: #d9797f;
     font-family: "Poppins", sans-serif;
@@ -82,12 +82,12 @@ h2 span{
     color:#d9797f;
     display: flex;
     gap: 1px;
-  font-family: "Dancing Script", cursive;
+    font-family: "Dancing Script", cursive;
 }
 .for-pink h4{
     font-size: 24px;
     font-weight: 400;
-  font-family: "Dancing Script", cursive;
+    font-family: "Dancing Script", cursive;
 }
 #home{
     background: url(./img/home\ background.jpeg) center center/cover  fixed  no-repeat;
@@ -113,7 +113,7 @@ h2 span{
     padding: 3rem 0;
 }
 #info .collection h2 ,
-#bouquets .widding h2
+#bouquets .widding-details  h2
 {
     text-align: center;
     padding: 15px 0;
@@ -125,17 +125,32 @@ h2 span{
 #info .photoes{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+#info .photoes .part,
+#contact .icons .part{
+    display: flex;
 }
 #info .collection h3{
     padding: 0 30px;
     color: #302d30;
     font-size: 20px;
 }
-#info .collection img,
+#info .collection img{
+    width: 300px;
+    height: 320px;
+    margin: 20px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+
+}
 #bouquets .widding img 
 {
-    width: 280px;
-    height: 300px;
+    width: 220px;
+    height: 240px;
     margin: 20px;
     border-radius: 14px;
     -webkit-border-radius: 14px;
@@ -207,10 +222,11 @@ h2 span{
 
 }
 #bouquets h2{
-     color:#302d30;
+    color:#302d30;
     font-family: "Dancing Script", cursive;
 
 }
+
 
 
 #bouquets .text span{
@@ -218,7 +234,7 @@ h2 span{
     margin-left: 25px;
     
 }
- 
+
 #bouquets .text h3{
     color: #302d30;
     
@@ -251,73 +267,74 @@ h2 span{
     align-items: center;
     margin: 50px 0;
 }
-#contact{
-    background: url('./img/contact\ img.jpeg') center center/cover  no-repeat;
-    padding: 30px 0;
-    
+#contact .container{
+    background-image: url('img/contact\ img.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: 20px 30px;
 }
-#contact .text{
-    margin: 35px 5% 35px auto;
-    max-width: 600px;
 
+#contact .inputD{
+    width: 450px;
+    margin-left:15%; 
+    max-width: 100%;
 }
-#contact .text h2{
-    color: #c85d68;
-    font-size: 50px;
-}
-#contact .text p{
-    color: #9b625d;
-    font-size: 20px;
-}
+
+
 form input ,
 textarea{
     display: block;
-    width: 75%;
     padding: 20px 15px;
     margin: 20px 0;
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: #fff;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border: 1px solid #e99aaf;
+    color: #8f5265;
+    width: 100%;
 }
+input::placeholder,textarea::placeholder{
+    color: #b7657d;
+    opacity: 1;
+}
+input:focus,textarea:focus{
+    border: 2px solid #d97991;
+    outline: none;
+    box-shadow: 0 0 5px #fce8ed;
+}
+#contact .icons{
 
-#contact .heart_border{
     display: flex;
-    align-items: center;
     gap: 10px;
-    margin: 5px 0;
-}
-#contact .heart_border span {
-    height: 1px;
-    background-color: #d88a98;
-    flex: 1;
-}
-#contact .heart_border i{
-    color: #d45b72;
-}
-#contact .top_icons{
-    display: flex;
-    gap: 25px;
     align-items: center;
+    margin-top: 70px;
 }
 #contact i{
     font-size: 30px;
-    color: #c85d68;
+    color: #d88a98;
     padding: 5px;
 }
-#contact .top_icons .i{
-    background-color: #fff5f2;
-    padding: 15px 25px;
-}
-#contact .bottomn_icon{
-   background-color: #fff5f2 ;
-   padding: 15px 25px;
-   width: 100%;
-   margin: 15px 0;
-   
+#contact .icons .i{
+    background-color:#fff7f8;
+    padding: 10px 15px;
+    margin: 10px ;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    width: fit-content;
+    
 }
 #footer{
     background-color:#fff5f2;
@@ -326,80 +343,86 @@ textarea{
     padding: 15px 0;
     font-size: 14px;
 }
-#footer h3{
-    display: inline;
-}
-#footer i{
-    color: #c85d68;
-}
-#footer p{
-    color: #9b625d;
-    font-family: "Playfair Display", serif;
-}
+
 #footer .Copyright{
     color: #302d30;
     font-weight: 500;
 
 }
 #footer .Copyright span{
-     font-family: "Dancing Script", cursive;
+    font-family: "Dancing Script", cursive;
     color: #c85d68;
+    display: block;
 }
-@media (max-width: 768px) {
-  .navbar { flex-direction: column; gap: 15px; }
-  .navbar .nav ul { flex-wrap: wrap; justify-content: center; }
-  .navbar ul li a { padding: 10px 15px; }
-}@media (max-width: 768px) {
-  #home .content h1 { font-size: 40px; }
-  #home .content h1 span { font-size: 45px; }
-  #home { background-attachment: scroll; } 
-}@media (max-width: 768px) {
-  #info .photoes { flex-wrap: wrap; justify-content: center; }
-  #info .collection img { width: 45%; height: auto; margin: 10px; }
-}@media (max-width: 768px) {
-  #about .content { flex-direction: column; }
-  #about .left_content img { width: 90%; margin: 20px auto; }
-  #about .right-content { padding: 20px; text-align: center; }
-  #about .right-content p { width: 100%; }
-}@media (max-width: 768px) {
-  #bouquets .widding .div1,
-  #bouquets .widding .div2,
-  #bouquets .total { flex-wrap: wrap; justify-content: center; }
-}@media (max-width: 768px) {
-  #contact .text {
+@media (max-width: 930px) {
+.navbar { justify-content: space-around; gap: 15px; }
+.navbar ul li a { padding: 10px 15px; }
+#home{padding-top: 18%;}
+#home .content h1 { font-size: 40px; }
+#home .content h1 span { font-size: 45px; }
+#home { background-attachment: scroll; } 
+
+#info .photoes { flex-wrap:wrap ; justify-content:center;gap: 10px; }
+#info .collection img  {width: 200px;height: 220px; max-width: 250px; max-height: 270px; }
+
+#about .content { flex-direction: column; }
+#about .left_content img { width: 100%; margin: 20px auto; }
+#about .right-content { padding: 20px; text-align: center; }
+#about .right-content p { width: 100%; }
+#bouquets .widding img{max-width: 200px;max-width: 220px;}
+#bouquets .widding,#info .photoes{display: flex; justify-content: center;align-items: center;}
+#bouquets .widding .div1,
+#bouquets .widding .div2,
+#bouquets .total { flex-wrap: wrap; justify-content: center;gap: 10px; }
+#bouquets .total{display: block;}
+#bouquets .love ,
+#bouquets .birthday,
+#bouquets .just_because,
+#bouquets .graduation ,
+#bouquets .well_soon { display: flex;justify-content: center;align-items: center; padding: 10px 0; gap: 25px;}
+#bouquets .love img,
+#bouquets .birthday img,
+#bouquets .just_because img,
+#bouquets .graduation img,
+#bouquets .well_soon img{ max-width: 180px; max-height: 200px;}
+
+#contact .text {
     position: static;  
     margin: 20px auto;
     padding: 0 20px;
-  }
-  form input, textarea { width: 100%; }
-  #contact .top_icons { flex-direction: column; }
+}
+form input, textarea { width: 100%;}
+#contact .icons i {font-size: 15px;}
+#contact .icons h3{font-size: 15px;}
+#contact .icons p{font-size: 15px;}
+#contact .icons .i{flex-wrap: wrap;}
+
 }
 #home{
     background: url(./img/home\ background.jpeg) center center/cover fixed no-repeat;
     height: 100vh;
-    height: 100dvh; /* يحل مشكلة شريط العنوان في متصفحات الموبايل */
-}@media (max-width: 1024px) {
-  #info .collection img {
-    width: 200px;
-    height: 220px;
-  }
-  #bouquets .love img,
-  #bouquets .birthday img,
-  #bouquets .just_because img,
-  #bouquets .graduation img,
-  #bouquets .well_soon img {
-    width: 110px;
-    height: 130px;
-    margin: 10px;
-  }
-  #bouquets .total {
-    flex-wrap: wrap;
-    row-gap: 30px;
-  }
-  #about .right-content p {
-    width: 80%;
-  }
+    height: 100dvh; 
 }
+@media (max-width: 630px){
+.navbar {flex-direction: column; }
+.navbar ul li a { padding: 5px 15px; }
+#home{padding-top:10%;}
+#info .collection img  {width:120px;height: 140px; max-width: 180px; max-height: 200px; }
+#info .details h3,#info .details i,#bouquets h3{font-size: 15px;}
+#info .photoes{display: flex;justify-content: center;align-items: center;}
+#about .left_content img { width: 100%; }
+#about .right-content h2{font-size: 25px;margin-top: 10px;}
+#bouquets span {font-size: 10px;}
+#bouquets .widding img{ width: 120px;height: 140px; max-width: 200px;max-width: 220px;}
+#bouquets .love img,
+#bouquets .birthday img,
+#bouquets .just_because img,
+#bouquets .graduation img,
+#bouquets .well_soon img{ width:100px ; height: 120px;max-width: 180px; max-height: 200px;}
+
+#contact .inputD{margin-left: 10px;}
+}
+#contact .icons{justify-content: center; flex-wrap: wrap;gap: 5px;}
 
 
 
